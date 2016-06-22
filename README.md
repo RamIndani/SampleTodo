@@ -2,8 +2,6 @@
 
 This is an Android application to create, retrieve, update and delete to do items.
 
-Submitted by : **Ramnivas Indani**
-
 Time Spent: **4** hours spent in total
 
 Completed User Stories
