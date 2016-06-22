@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SampleTodo</string>
+    <string name="etAddNewHint">Add a new item</string>
+    <string name="etEditItem">Edit Item Below:</string>
+    <string name="save">Save</string>
+    <string name="todo_item_empty">To do item can not be empty</string>
+</resources>
