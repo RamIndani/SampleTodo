@@ -1,39 +1,28 @@
-# Pre-work - *SampleTodo*
+# SampleTodo App demo
 
-**SampleTodo** is an Andorid application to create, retrieve, update and delete to do list.
+This is an Android application to create, retrieve, update and delete to do items.
 
 Submitted by : **Ramnivas Indani**
 
-Time Spent: **3** hours spent in total
+Time Spent: **4** hours spent in total
 
-## User Stories
+Completed User Stories
 
-The following **required** functionality is complete:
-* User can add new to do items.
-* User can retrieve created to do items from todo.txt.
-* User can edit the existing to do items.
-* User can delete the creating to do items.
+* [x] Required: User can add new to do items.
+* [x] Required: User can retrieve created to do items.
+* [x] Required: User can edit the existing to do items.
+* [x] Required: User can delete the created to do items.
+
+
+Notes:
 
 Application validates if to do item is empty and shows error message saying to do item can not be empty
 
-## Notes
 
-Describe any challenges encountered while building the app.
+Walkthrough of all user stories:
 
-## License
+![Video Walkthrough](demo/SampleTodo.gif)
 
-    Copyright [2016] [Ramnivas Indani]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
     
     
