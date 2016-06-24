@@ -10,6 +10,7 @@ Completed User Stories
 * [x] Required: User can retrieve created to do items.
 * [x] Required: User can edit the existing to do items.
 * [x] Required: User can delete the created to do items.
+* [x] Additional: All the records are stored in SQLite database using ActiveAndroid library.
 
 
 Notes:

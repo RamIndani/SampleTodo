@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.rivaldroid.sampletodo.model.TodoItem;
 
@@ -37,15 +36,16 @@ public class EditItemActivity extends AppCompatActivity {
         etEditItem.requestFocus();
         //Display keyboard when user starts the activity to edit to do item.
         inputMethodManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
-        inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
+
+        inputMethodManager.showSoftInput(etEditItem, InputMethodManager.SHOW_IMPLICIT);
     }
 
     public void saveUpdates(View view) {
         //Get the updated text - Updated Text can not be empty
         String updatedTodoItem = etEditItem.getText().toString();
-        if(!updatedTodoItem.isEmpty()) {
+        if(!updatedTodoItem.trim().isEmpty()) {
             //Set updated to do data to serialized model
-            editTodoItem.setTodoItemData(updatedTodoItem);
+            editTodoItem.setTodoItemData(updatedTodoItem.trim());
             //Create Intent to send back data to calling activity
             Intent updatedData = new Intent();
             //Attach data to intent
@@ -57,7 +57,6 @@ public class EditItemActivity extends AppCompatActivity {
             //Finish the activity
             finish();
         } else{
-            Toast.makeText(this, getResources().getString(R.string.todo_item_empty), Toast.LENGTH_SHORT).show();
             etEditItem.setError(getResources().getString(R.string.todo_item_empty));
         }
     }
